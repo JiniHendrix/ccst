@@ -1,0 +1,119 @@
+{
+  "name": "ccst",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev-server": "NODE_ENV=3000 nodemon ./server",
+    "dev": "webpack-dev-server --config webpack.dev.js --progress --colors",
+    "lint": "eslint --fix ./",
+    "build": "webpack --config webpack.prod.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JiniHendrix/ccst.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JiniHendrix/ccst/issues"
+  },
+  "homepage": "https://github.com/JiniHendrix/ccst#readme",
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "classnames": "^2.2.5",
+    "express": "^4.13.3",
+    "grid-styled": "^2.0.0-11",
+    "history": "^4.7.2",
+    "prop-types": "^15.6.0",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-dropdown": "^1.3.2",
+    "react-redux": "^4.0.6",
+    "react-router": "^4.1.1",
+    "react-router-dom": "^4.2.2",
+    "react-router-redux": "^4.0.8",
+    "redux": "^3.6.0",
+    "redux-form": "^7.1.1",
+    "redux-thunk": "^2.2.0"
+  },
+  "devDependencies": {
+    "autoprefixer-loader": "^3.1.0",
+    "babel": "^6.23.0",
+    "babel-cli": "^6.4.0",
+    "babel-core": "^6.4.0",
+    "babel-eslint": "^8.0.1",
+    "babel-jest": "20.0.0",
+    "babel-loader": "^6.2.1",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "chai": "^3.5.0",
+    "chai-immutable": "^1.5.3",
+    "css-loader": "^0.23.1",
+    "csscomb": "^4.2.0",
+    "enzyme": "^2.7.1",
+    "enzyme-to-json": "^1.6.0",
+    "eslint": "^4.13.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-prettier": "^2.6.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-loader": "1.7.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-node": "^5.2.0",
+    "eslint-plugin-prettier": "^2.3.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-react": "^7.5.1",
+    "eslint-plugin-standard": "^3.0.1",
+    "extract-text-webpack-plugin": "^2.0.0",
+    "fetch-mock": "^5.13.1",
+    "file-loader": "^0.8.5",
+    "image-webpack-loader": "^3.4.2",
+    "img-loader": "^1.2.2",
+    "jest": "20.0.4",
+    "jest-cli": "20.0.4",
+    "jest-serializer-enzyme": "^1.0.0",
+    "jsdom": "^11.5.1",
+    "module-alias": "^2.0.0",
+    "node-sass": "^3.4.2",
+    "nodemon": "^1.11.0",
+    "prettier": "^1.7.4",
+    "react-addons-test-utils": "^15.6.2",
+    "react-hot-loader": "^3.1.1",
+    "react-test-renderer": "^15.5.4",
+    "redux-devtools": "^3.4.0",
+    "redux-devtools-dock-monitor": "^1.1.2",
+    "redux-devtools-log-monitor": "^1.3.0",
+    "redux-mock-store": "^1.3.0",
+    "sass-loader": "^3.1.2",
+    "style-loader": "^0.13.0",
+    "url-loader": "^0.5.7",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.2",
+    "webpack-merge": "^4.1.1"
+  },
+  "babel": {
+    "env": {
+      "test": {
+        "presets": [
+          "react"
+        ],
+        "plugins": [
+          "babel-plugin-transform-react-constant-elements",
+          "babel-plugin-transform-react-remove-prop-types",
+          "transform-es2015-modules-commonjs"
+        ]
+      }
+    }
+  },
+  "_moduleAliases": {
+    "app": "./app"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "printWidth": 200
+  }
+}
